@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style-form.css">
+</head>
+<body>
+    <form action="">
+    <fieldset>
+        <legend>Personal details</legend>
+        <label for="First-name">First Name <span class="required-sign">*</span><input type="text" id="First-name" required></label>
+        <label for="Last-name">Last Name <span class="required-sign">*</span><input type="text" id="Last-name" required></label>
+        <label for="DOB">Date of Birth <span class="required-sign">*</span><input type="text" id="DOB" required></label>
+        <label for="Gender">Gender <span class="required-sign">*</span>
+            <input type="radio" name="Gender" id="male" value="male" required>Male
+            <input type="radio" name="Gender" id="female" value="female">female
+        </label>    
+        <label for="city">City <span class="required-sign">*</span>
+            <select name="city" id="city" required>
+                <option disabled selected value="">Select here</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Pune">Pune</option>
+            </select>
+        </label>
+        <label for="phone">Phone <span class="required-sign">*</span>
+        <input type="tel" name="number" id="phone" placeholder="Mobile Number" required>
+        </label>
+        <label for="mail">Email <span class="required-sign">*</span><input type="email" name="email" id="mail" placeholder="Email" required></label>
+        <label for="description">Description
+            <textarea name="description" id="description"></textarea>
+        </label>
+
+        
+    </fieldset>
+    <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
